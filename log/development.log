@@ -1638,3 +1638,267 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 17:33:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 17:18:36 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 17:19:35 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=OBIMZ3MY24U1P2XLCRD2UHARTDNG0TWYC0KN3SVWOMAVVNSM" for 127.0.0.1 at 2019-06-06 17:19:46 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"OBIMZ3MY24U1P2XLCRD2UHARTDNG0TWYC0KN3SVWOMAVVNSM"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant SessionsController::FoursquareService):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (287.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (276.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (534.0ms)
+
+
+Started GET "/auth?code=FJJ1ARQON530Y5K30MDR4KUHOIJTCZCZOU55ERR54EFPKGOY" for 127.0.0.1 at 2019-06-06 17:20:30 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"FJJ1ARQON530Y5K30MDR4KUHOIJTCZCZOU55ERR54EFPKGOY"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+LoadError (Unable to autoload constant FoursquareService, expected /mnt/c/Users/Christoph/.atom/.learn-ide/home/ChristophGruener/web-service-objects-readme-online-web-ft-021119/app/services/foursquare_service.rb to define it):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (170.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (172.9ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (393.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 17:20:31 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=RIEPOTX5QXEMSOOE5OAUEC4C5OIBMVCHLYOU0BQM4R1DR1ER" for 127.0.0.1 at 2019-06-06 17:20:31 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"RIEPOTX5QXEMSOOE5OAUEC4C5OIBMVCHLYOU0BQM4R1DR1ER"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+LoadError (Unable to autoload constant FoursquareService, expected /mnt/c/Users/Christoph/.atom/.learn-ide/home/ChristophGruener/web-service-objects-readme-online-web-ft-021119/app/services/foursquare_service.rb to define it):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (190.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (172.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (392.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 17:20:58 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=YYPCTCQDCDCTXLPCPFKI5W1HZVWTUVI4B5DEEAVF1TOB2FUF" for 127.0.0.1 at 2019-06-06 17:20:59 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"YYPCTCQDCDCTXLPCPFKI5W1HZVWTUVI4B5DEEAVF1TOB2FUF"}
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `params' for #<FoursquareService:0x007f1780a101f0>):
+  app/services/foursquare_service.rb:8:in `block in authenticate!'
+  app/services/foursquare_service.rb:3:in `authenticate!'
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (170.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (184.5ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (406.7ms)
+
+
+Started GET "/auth?code=YYPCTCQDCDCTXLPCPFKI5W1HZVWTUVI4B5DEEAVF1TOB2FUF" for 127.0.0.1 at 2019-06-06 17:21:35 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"YYPCTCQDCDCTXLPCPFKI5W1HZVWTUVI4B5DEEAVF1TOB2FUF"}
+Completed 500 Internal Server Error in 460ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `session' for #<FoursquareService:0x007f178122a278>):
+  app/services/foursquare_service.rb:12:in `authenticate!'
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (169.6ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (173.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (396.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 17:21:38 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=CGMNNKQNQYYPYS5LNKRRG1MMREUPACVSA40PFQSU50BP4WPQ" for 127.0.0.1 at 2019-06-06 17:21:38 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"CGMNNKQNQYYPYS5LNKRRG1MMREUPACVSA40PFQSU50BP4WPQ"}
+Completed 500 Internal Server Error in 409ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `session' for #<FoursquareService:0x007f17817ecc60>):
+  app/services/foursquare_service.rb:12:in `authenticate!'
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (179.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (176.1ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (424.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 17:22:21 -0600
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=35L4UEPD2NLRC41LC4J5W04CPUIOXCDEB545DJXPKG3HT4M4&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=1XHU45ECSQNXNBUXJLSQKYP2PP4G3UHR2BXB34RVDZTTCCES" for 127.0.0.1 at 2019-06-06 17:22:21 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"1XHU45ECSQNXNBUXJLSQKYP2PP4G3UHR2BXB34RVDZTTCCES"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 441ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-06 17:22:22 -0600
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 638ms (Views: 637.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-06-06 17:22:23 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2019-06-06 17:22:23 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2019-06-06 17:22:23 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2019-06-06 17:22:23 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-06-06 17:22:23 -0600
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-06-06 17:24:03 -0600
+Processing by SearchesController#friends as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant SearchesController::ForsquareService):
+  app/controllers/searches_controller.rb:7:in `friends'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (191.5ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (212.2ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (479.9ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-06-06 17:24:28 -0600
+Processing by SearchesController#friends as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `forsquare' for #<SearchesController:0x007f1781938fb0>
+Did you mean?  foursquare
+               foursquare):
+  app/controllers/searches_controller.rb:8:in `friends'
+
+
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (224.7ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (186.9ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/chrstphgrnr/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (441.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-06-06 17:24:35 -0600
+Processing by SearchesController#friends as HTML
+  Rendered searches/friends.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 320ms (Views: 76.4ms | ActiveRecord: 0.0ms)
